@@ -80,6 +80,29 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .quote-band{margin:56px 0 0;text-align:center;font:italic 400 clamp(1.4rem,2.6vw,2rem)/1.35 var(--display);color:var(--accent)}
 .quote-band span{display:block;margin-top:.5em;font:500 .7rem var(--caps);font-style:normal;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
 
+/* technical sheet */
+.sheet-sec{display:grid;grid-template-columns:5rem minmax(0,1fr);gap:24px;padding:36px 0;border-top:1px solid var(--line)}
+.sheet-sec:first-of-type{margin-top:40px}
+.sec-no{font:500 2.2rem/1 var(--display);color:var(--accent);margin:0}
+.sheet-sec h3{font-size:clamp(1.5rem,2.2vw,2rem);margin:0 0 .6em}
+.sheet-sec p{max-width:44em}
+.spec{display:grid;grid-template-columns:10rem minmax(0,1fr);margin:0;border-top:1px solid var(--line)}
+.spec dt,.spec dd{margin:0;padding:10px 0;border-bottom:1px solid var(--line);font-size:.98rem;line-height:1.5}
+.spec dt{font:500 .72rem/2 var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding-right:16px}
+.spec dd{color:var(--text)}
+.sheet-fig{margin:8px 0 36px}
+.sheet-fig img{width:100%;height:auto}
+.sheet-fig.narrow{max-width:640px;margin-left:calc(5rem + 24px)}
+.plots,.winespec{width:100%;border-collapse:collapse;font-size:.98rem;margin:8px 0 0}
+.plots th,.winespec thead th{font:500 .72rem var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--ink)}
+.plots td,.winespec td,.winespec tbody th{padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--text)}
+.plots td:first-child{font-family:var(--display);font-size:1.15rem;color:var(--ink)}
+.winespec tbody th{font:500 .72rem/2 var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:left;white-space:nowrap}
+.winespec thead th{font:500 1.15rem var(--display);letter-spacing:0;text-transform:none;color:var(--ink)}
+.table-wrap{overflow-x:auto}
+.plot-card{margin-top:28px;background:var(--white);padding:22px 24px}
+.plot-name{font:italic 400 1.25rem var(--display);color:var(--accent);margin:0 0 12px}
+
 /* land */
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin:6px 0 0}
 
@@ -159,6 +182,8 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 
 /* responsive */
 @media (max-width:960px){
+  .sheet-sec{grid-template-columns:minmax(0,1fr);gap:8px}
+  .sheet-fig.narrow{margin-left:0}
   .visit-img{padding:0}
   .hero{height:auto;min-height:0;background:var(--ink) !important}
   .hero img{position:relative;inset:auto;height:auto;aspect-ratio:1448/1086;object-position:50% 50%}
@@ -175,6 +200,10 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .band-right{align-items:flex-start}
 }
 @media (max-width:560px){
+  .spec{grid-template-columns:1fr}
+  .spec dt{border-bottom:0;padding-bottom:0}
+  .winespec{min-width:520px}
+  .plot-card{padding:16px}
     .brand{font-size:.85rem;letter-spacing:.14em}
   .nav nav{gap:14px}
   .nav nav a[href="index.html#visit"],.nav nav a[href="index.html#wines"]{display:none}
