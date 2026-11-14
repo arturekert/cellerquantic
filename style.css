@@ -67,6 +67,12 @@ section{padding:110px 0}
 .wine{background:var(--paper);padding:44px 34px;text-align:center;border-top:3px solid var(--wine)}
 .wine .kind{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--wine)}
 .wine p:last-child{color:#3c3530;margin:0}
+.lede-dark{max-width:36em;margin:0 auto;color:var(--muted);font-size:1.02rem}
+.score{margin:-.2em 0 .1em}
+.score a{border:0;color:var(--wine)}
+.score strong{font:500 2.6rem/1 var(--serif)}
+.score span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin-left:.35em}
+.vintage{font:italic 1.05rem var(--serif);color:var(--muted);margin-bottom:1.2em}
 .note{font-size:.9rem;color:var(--muted);margin-top:36px}
 
 .pair{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;padding-top:110px}
@@ -98,10 +104,6 @@ section{padding:110px 0}
 .tours small{font:400 .75rem var(--sans);color:#b8ab9b}
 .visit .note{color:#b8ab9b}
 
-/* guardians */
-.guardians .big{font:400 1.6rem/1.45 var(--serif);max-width:30em;margin:0 auto 1.6em}
-.button{display:inline-block;padding:13px 30px;border:1px solid var(--wine);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
-.button:hover{background:var(--wine);color:var(--paper)}
 
 /* contact & footer */
 .contact{background:var(--paper-2);padding:90px 0}
