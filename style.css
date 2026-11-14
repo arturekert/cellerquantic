@@ -59,9 +59,6 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 /* hero */
 .hero{position:relative;height:min(84vh,780px);min-height:480px;padding:0;overflow:hidden;background:#5b6b3a center/cover no-repeat}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .fridge{position:absolute;z-index:0;left:58%;top:0;height:90%;width:auto;aspect-ratio:300/640;transform:translateX(-50%);
-  color:#8C6528;opacity:.78;mix-blend-mode:multiply;pointer-events:none;
-  -webkit-mask-image:linear-gradient(#000 55%,transparent 98%);mask-image:linear-gradient(#000 55%,transparent 98%)}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,24,22,0) 35%,rgba(26,24,22,.62))}
 .hero-text{position:absolute;z-index:1;left:0;right:0;bottom:0;max-width:var(--max);margin:0 auto;padding:0 var(--pad) clamp(40px,8vh,80px)}
 .kicker{font:500 .78rem/1 var(--caps);letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.85);margin:0 0 1.2em}
@@ -154,7 +151,6 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 
 /* responsive */
 @media (max-width:960px){
-  .hero .fridge{height:72%;left:60%}
   .nav nav a:nth-child(-n+2),.nav nav a:nth-child(4){display:none}
   .cols,.capsule,.visit{grid-template-columns:1fr;gap:24px}
   .facts{grid-template-columns:1fr;gap:20px}
