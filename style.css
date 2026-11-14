@@ -117,12 +117,11 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .dark p,.dark figcaption{color:var(--dark-text)}
 .label-head{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center}
 .bigh{width:clamp(110px,15vw,190px);height:clamp(130px,18vw,224px);color:var(--pink)}
-.labels{margin-top:48px}
-.labels figure{margin:0}
-.labels img{aspect-ratio:252/388;object-fit:cover}
-.labels figcaption{font-size:.95rem;line-height:1.5;margin-top:14px}
-.labels b{display:block;font:500 .78rem var(--caps);letter-spacing:.24em;text-transform:uppercase;color:var(--cream);margin-bottom:8px}
-.capsule{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:56px}
+.label-row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start;margin-top:56px}
+.classic{margin:0}
+.classic img{aspect-ratio:400/615;object-fit:cover}
+.classic figcaption{font-size:.95rem;line-height:1.5;margin-top:14px}
+.capsule{display:flex;flex-direction:column;gap:28px}
 .capsule img{aspect-ratio:378/224;object-fit:cover}
 
 /* team */
@@ -170,13 +169,11 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .hero::after{display:none}
   .hero-text{position:relative;padding:28px var(--pad) 36px}
   .nav nav a:not(.m){display:none}
-  .cols,.capsule,.visit{grid-template-columns:1fr;gap:24px}
+  .cols,.visit,.label-row{grid-template-columns:1fr;gap:24px}
   .facts{grid-template-columns:1fr;gap:20px}
   .grid3{grid-template-columns:1fr;max-width:460px;margin-left:auto;margin-right:auto}
   .wine img{height:340px}
   .label-head{grid-template-columns:1fr;gap:20px}
-  .labels{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;gap:12px}
-  .labels figcaption{font-size:.82rem}
   .grid4{grid-template-columns:1fr 1fr}
   .visit-img{padding:0}
   .band-right{align-items:flex-start}
@@ -187,7 +184,6 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .nav nav a[href="index.html#visit"],.nav nav a[href="index.html#wines"]{display:none}
   .nav nav a,.brand{white-space:nowrap}
   .nav nav a{letter-spacing:.14em}
-  .labels{grid-template-columns:1fr}
   .grid4{grid-template-columns:1fr}
   .tours li{grid-template-columns:1fr;gap:4px}
   .press li{grid-template-columns:1fr auto;gap:4px 12px}
