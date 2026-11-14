@@ -119,7 +119,9 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .label-fig{margin:0;max-width:460px}
 .label-fig img{display:block;width:100%;height:auto}
 .label-text .bigh{display:block;width:clamp(70px,8vw,104px);height:clamp(82px,9.4vw,122px);color:var(--pink);margin-bottom:28px}
-.label-text h3{font-size:clamp(1.5rem,2.2vw,2rem);margin-top:1.4em;color:var(--cream)}
+.label-text h2,.label-text h3{font-size:clamp(1.5rem,2.2vw,2rem);line-height:1.15;color:var(--cream)}
+.label-text h2{margin-bottom:.6em}
+.label-text h3{margin-top:1.4em}
 .label-text p{max-width:34em}
 
 /* team */
