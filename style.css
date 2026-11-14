@@ -64,8 +64,6 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .kicker{font:500 .78rem/1 var(--caps);letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.85);margin:0 0 1.2em}
 .hero h1{font:500 clamp(2.4rem,5.6vw,4.4rem)/1.05 var(--display);color:#fff;margin:0 0 .45em}
 .hero h1 em{font-weight:400;color:#F3D9C4}
-.credit{position:absolute;z-index:1;right:var(--pad);bottom:14px;max-width:34em;margin:0;text-align:right;
-  font:400 .7rem/1.4 var(--caps);letter-spacing:.03em;color:rgba(255,255,255,.72)}
 .lede{font-size:1.08rem;max-width:32em;margin:0;color:rgba(255,255,255,.92)}
 
 /* land */
@@ -153,9 +151,7 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 
 /* responsive */
 @media (max-width:960px){
-  .credit{left:var(--pad);right:var(--pad);max-width:none;text-align:left;font-size:.62rem;bottom:10px}
-  .hero-text{padding-bottom:64px}
-  .hero img{object-position:68% 45%}
+    .hero img{object-position:68% 45%}
   .nav nav a:nth-child(-n+2),.nav nav a:nth-child(4){display:none}
   .cols,.capsule,.visit{grid-template-columns:1fr;gap:24px}
   .facts{grid-template-columns:1fr;gap:20px}
