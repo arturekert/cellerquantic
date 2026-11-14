@@ -134,17 +134,10 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .visit{padding:0;background:var(--white)}
 .visit-img{margin:0}
 .visit-img img{width:100%;height:auto;aspect-ratio:2000/990;max-height:82vh;object-fit:cover;object-position:50% 60%}
-.visit-text{max-width:var(--max);margin:0 auto;padding:clamp(48px,6vw,88px) var(--pad);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:64px;align-items:start}
-.visit-intro{grid-column:1;grid-row:1 / span 2}
-.visit-text > .tours{grid-column:2;margin-top:0}
-.visit-text > .note{grid-column:2}
+.visit-text{max-width:46rem;margin:0 auto;padding:clamp(48px,6vw,88px) var(--pad);text-align:center}
+.visit-text .visit-lede{margin-left:auto;margin-right:auto}
+.visit-text p:last-child{font-size:1.05rem;max-width:36em;margin:0 auto}
 .visit-lede{font:italic 400 1.35rem/1.45 var(--display);color:var(--ink);max-width:28em}
-.tours{list-style:none;margin:28px 0;padding:0}
-.tours li{display:grid;grid-template-columns:7.5em 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line)}
-.tours li:last-child{border-bottom:1px solid var(--line)}
-.tours .q{font:500 .74rem/1.9 var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-.tours h4{font-size:1.3rem;margin-bottom:.25em}
-.tours p{margin:0;font-size:.95rem;color:var(--muted)}
 
 /* news */
 .press{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line)}
@@ -179,9 +172,7 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .grid3{grid-template-columns:1fr;max-width:460px;margin-left:auto;margin-right:auto}
   .wine img{height:340px}
   .grid4{grid-template-columns:1fr 1fr}
-  .visit-text{grid-template-columns:1fr}
-  .visit-text > *{grid-column:1 !important;grid-row:auto !important}
-  .visit-text > .tours{margin-top:20px}
+  .visit-text{text-align:left}
   .band-right{align-items:flex-start}
 }
 @media (max-width:560px){
@@ -191,7 +182,6 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .nav nav a,.brand{white-space:nowrap}
   .nav nav a{letter-spacing:.14em}
   .grid4{grid-template-columns:1fr}
-  .tours li{grid-template-columns:1fr;gap:4px}
-  .press li{grid-template-columns:1fr auto;gap:4px 12px}
+    .press li{grid-template-columns:1fr auto;gap:4px 12px}
   .press time{grid-column:1/-1}
 }
