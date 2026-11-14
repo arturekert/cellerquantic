@@ -132,9 +132,9 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 
 /* visit */
 .visit{padding:0;background:var(--white)}
-.visit-img{margin:0}
-.visit-img img{width:100%;height:auto;aspect-ratio:2000/990;max-height:82vh;object-fit:cover;object-position:50% 60%}
-.visit-text{max-width:var(--max);margin:0 auto;padding:clamp(48px,6vw,88px) var(--pad)}
+.visit-img{max-width:var(--max);margin:0 auto;padding:clamp(48px,6vw,88px) var(--pad) 0}
+.visit-img img{width:100%;height:auto;aspect-ratio:16/9}
+.visit-text{max-width:var(--max);margin:0 auto;padding:clamp(32px,4vw,48px) var(--pad) clamp(48px,6vw,88px)}
 .visit-text p:last-child{font-size:1.05rem;max-width:36em;margin:0}
 .visit-lede{font:italic 400 1.35rem/1.45 var(--display);color:var(--ink);max-width:28em}
 
@@ -159,6 +159,7 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 
 /* responsive */
 @media (max-width:960px){
+  .visit-img{padding:0}
   .hero{height:auto;min-height:0;background:var(--ink) !important}
   .hero img{position:relative;inset:auto;height:auto;aspect-ratio:1448/1086;object-position:50% 50%}
   .hero::after{display:none}
