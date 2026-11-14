@@ -91,6 +91,10 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .spec dt{font:500 .72rem/2 var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding-right:16px}
 .spec dd{color:var(--text)}
 .sheet-fig{margin:8px 0 36px}
+.sheet-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 36px}
+.sheet-pair figure{margin:0}
+.sheet-pair img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.sheet-pair figcaption{font:500 .7rem var(--caps);letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-top:8px}
 .sheet-fig img{width:100%;height:auto}
 .sheet-fig.narrow{max-width:640px;margin-left:calc(5rem + 24px)}
 .plots,.winespec{width:100%;border-collapse:collapse;font-size:.98rem;margin:8px 0 0}
@@ -200,6 +204,7 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .band-right{align-items:flex-start}
 }
 @media (max-width:560px){
+  .sheet-pair{grid-template-columns:1fr}
   .spec{grid-template-columns:1fr}
   .spec dt{border-bottom:0;padding-bottom:0}
   .winespec{min-width:520px}
