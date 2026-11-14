@@ -116,10 +116,12 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .dark h2,.dark h3{color:var(--cream)}
 .dark p,.dark figcaption{color:var(--dark-text)}
 .label-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,88px);align-items:center}
-.label-fig{display:grid;gap:10px;margin:0;max-width:460px}
-.label-fig img{display:block;width:100%;object-fit:cover}
-.label-fig .top-view{aspect-ratio:378/224}
-.label-fig img:last-child{aspect-ratio:4/5;object-position:50% 62%}
+.label-fig{margin:0;max-width:460px}
+.label-fig img{display:block;width:100%;height:auto}
+.designs{list-style:none;margin:0 0 .4em;padding:0}
+.designs li{display:grid;grid-template-columns:9.5rem 1fr;gap:12px;align-items:baseline;padding:10px 0;border-top:1px solid rgba(237,230,220,.14);color:var(--dark-text);font-size:.98rem;line-height:1.5}
+.designs li:last-child{border-bottom:1px solid rgba(237,230,220,.14)}
+.designs b{font:500 .72rem var(--caps);letter-spacing:.22em;text-transform:uppercase;color:var(--cream)}
 .label-text .bigh{display:block;width:clamp(70px,8vw,104px);height:clamp(82px,9.4vw,122px);color:var(--pink);margin-bottom:28px}
 .label-text h3{font-size:clamp(1.5rem,2.2vw,2rem);margin-top:1.4em;color:var(--cream)}
 .label-text p{max-width:34em}
@@ -185,6 +187,7 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .band-right{align-items:flex-start}
 }
 @media (max-width:560px){
+  .designs li{grid-template-columns:1fr;gap:4px}
   .brand{font-size:.85rem;letter-spacing:.14em}
   .nav nav{gap:14px}
   .nav nav a[href="index.html#visit"],.nav nav a[href="index.html#wines"]{display:none}
