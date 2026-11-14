@@ -7,12 +7,13 @@
 <meta name="description" content="Celler Quàntic de Gaianes — wines from a restored 18th-century cellar in the mountains of inland Alicante, made by three quantum physicists.">
 <meta property="og:title" content="Celler Quàntic · Gaianes">
 <meta property="og:description" content="Where good wine meets quantum weirdness.">
-<meta property="og:image" content="img/bottle-vines.jpg">
+<meta property="og:image" content="https://arturekert.github.io/cellerquantic/img/og.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 48 55'><path fill='%237E1A3A' d='m39.55,42.42v4.26h-14.72v-4.26h4.65v-17.24c0-4.91-3.55-8.07-8.65-8.07s-9.43,3.87-9.43,9.1v16.21h4.65v4.26H1.33v-4.26h4.91V4.26H1.33V0h10.01v18.85c2-3.68,5.940-6.58,10.85-6.58,7.36,0,12.46,4.91,12.46,12.33v17.82h4.91Z'/><rect fill='%237E1A3A' x='14.94' width='14.52' height='4.31'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Jost:wght@500&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-1400.webp" imagesrcset="img/hero-800.webp 800w, img/hero-1400.webp 1400w, img/hero-2000.webp 2000w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -38,34 +39,24 @@
 
 <main id="top">
 
-  <!-- COVER -->
-  <section class="cover">
-    <div class="cover-text">
+  <!-- HERO -->
+  <section class="hero" style="background-image:url(data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAAAQBQCdASogABIAPu1kq0+ppSOiMBgIATAdiWIAgYYEogZ6GFHNlTfCDLzLJPEzpPEoAPud4eEipfiSCUgUUw13RCNLQtGKNkYPP5CcKmm3BE8e63CAcym+7ari70SQTinNBfdAJ1cqXxr+PlBMO4XxzduJ0Jjk8kCsmcPZwnnI6Xwb4/gvm0fOCos43n38Re+Qb7UfuFaR1iXumim7fog7JqeO2NhorVgYhjkUTLJomRkslvonDLJVGq4EAAAA)">
+    <img src="img/hero-1400.webp" srcset="img/hero-800.webp 800w, img/hero-1400.webp 1400w, img/hero-2000.webp 2000w" sizes="100vw" width="2000" height="1124" fetchpriority="high" decoding="async" alt="Vineyard rows among holm oaks and pines near Agres, in the mountains of inland Alicante">
+    <div class="hero-text">
       <p class="kicker">Gaianes · Comunitat Valenciana</p>
-      <div class="cover-mid">
-        <svg class="logo" role="img" aria-label="Celler Quàntic" viewBox="0 0 145.45 151.36" fill="currentColor"><path d="m39.55,42.420v4.26h-14.72v-4.26h4.65v-17.24c0-4.91-3.55-8.07-8.65-8.07s-9.43,3.87-9.43,9.1v16.21h4.65v4.26H1.33v-4.26h4.91V4.26H1.33V0h10.01v18.85c2-3.68,5.94-6.58,10.85-6.58,7.36,0,12.46,4.91,12.46,12.33v17.82h4.91Z"/><rect x="14.94" width="14.52" height="4.31"/><path d="m13.4,151.36l-2.16-4.12c-.31.03-.62.05-.91.07-.3.01-.6.02-.91.02-2.94,0-5.24-.84-6.91-2.51-1.67-1.67-2.51-4.27-2.51-7.8v-13.54c0-3.4.85-5.99,2.55-7.75,1.7-1.76,4-2.65,6.91-2.65s5.2.88,6.89,2.62c1.69,1.75,2.53,4.34,2.53,7.78v13.54c0,2.09-.3,3.86-.91,5.29-.61,1.44-1.48,2.56-2.6,3.37l3.61,5.67h-5.57Zm-.23-9.79c.78-1.09,1.17-2.7,1.17-4.82v-13.07c0-2.16-.39-3.79-1.17-4.92-.78-1.12-2.03-1.69-3.75-1.69s-2.96.57-3.72,1.71c-.77,1.14-1.15,2.77-1.15,4.9v13.07c0,2.12.39,3.73,1.17,4.82.78,1.09,2.03,1.64,3.75,1.64s2.92-.55,3.7-1.64Z"/><path d="m25.88,144.89c-1.45-1.62-2.18-4.15-2.18-7.59v-23.84h4.54v23.61c0,2.09.33,3.61,1.01,4.54.67.94,1.76,1.41,3.25,1.41s2.58-.47,3.23-1.41c.66-.94.98-2.45.98-4.54v-23.61h4.54v23.84c0,3.44-.74,5.97-2.22,7.59-1.48,1.62-3.66,2.44-6.54,2.44s-5.18-.81-6.63-2.44Z"/><path d="m59.3,140.63h-8.81l-1.31,6.23h-4.45l7.82-33.4h4.45l8.1,33.4h-4.45l-1.36-6.23Zm-11.85-37.34h4.64l4.26,7.35h-3.33l-5.57-7.35Zm3.93,33.21h6.98l-3.14-14.24-.42-4.87-.42,4.87-3,14.24Z"/><path d="m72.79,146.86h-4.03v-33.4h3.84l9.51,21.36,2.01,5.71-.7-6.09v-20.99h4.08v33.4h-3.79l-9.7-21.6-1.97-6.7.75,7.26v21.03Z"/><path d="m101.79,117.54v29.33h-4.4v-29.33h-6.04v-4.08h16.49v4.08h-6.04Z"/><path d="m110.46,146.86v-4.12h4.22v-25.3h-4.22v-3.98h12.69v3.98h-4.22v25.3h4.22v4.12h-12.69Z"/><path d="m129.38,144.85c-1.59-1.65-2.39-4.25-2.39-7.78v-13.73c0-3.4.81-5.97,2.44-7.71,1.62-1.73,3.89-2.6,6.79-2.6,3.25,0,5.6.83,7.05,2.48,1.45,1.66,2.18,4.26,2.18,7.82v2.62h-4.68v-2.44c0-2.37-.3-4.05-.91-5.04-.61-.98-1.83-1.48-3.68-1.48-1.72,0-2.92.55-3.61,1.66-.69,1.11-1.03,2.73-1.03,4.85v13.26c0,2.12.35,3.72,1.05,4.8.7,1.08,1.91,1.62,3.63,1.62s2.87-.54,3.54-1.62c.67-1.08,1.01-2.68,1.01-4.8v-3.33h4.68v3.61c0,3.5-.8,6.08-2.41,7.75-1.61,1.67-3.9,2.51-6.86,2.51s-5.2-.83-6.79-2.48Z"/><path d="m2.39,95.1c-1.59-1.65-2.39-4.25-2.39-7.78v-13.73c0-3.4.81-5.97,2.44-7.71,1.62-1.73,3.89-2.6,6.79-2.6,3.25,0,5.6.83,7.05,2.48,1.45,1.66,2.18,4.26,2.18,7.82v2.62h-4.68v-2.44c0-2.37-.3-4.05-.91-5.04-.61-.98-1.83-1.48-3.68-1.48-1.72,0-2.92.55-3.61,1.66-.69,1.11-1.03,2.73-1.03,4.85v13.26c0,2.12.35,3.72,1.05,4.8.7,1.08,1.91,1.62,3.63,1.62s2.87-.54,3.54-1.62c.67-1.08,1.01-2.68,1.01-4.8v-3.33h4.68v3.61c0,3.5-.8,6.08-2.41,7.75-1.61,1.67-3.9,2.51-6.86,2.51s-5.2-.83-6.79-2.48Z"/><path d="m38.6,97.11h-15.46v-33.4h14.99v3.98h-10.63v10.4h9.23v4.08h-9.23v10.82h11.1v4.12Z"/><path d="m42.96,97.11v-33.4h4.4v29.18h10.07v4.22h-14.47Z"/><path d="m61.6,97.11v-33.4h4.4v29.18h10.07v4.22h-14.47Z"/><path d="m95.7,97.11h-15.46v-33.4h14.99v3.98h-10.63v10.4h9.23v4.08h-9.23v10.82h11.1v4.12Z"/><path d="m104.41,83.62v13.49h-4.36v-33.4h8.48c3.15,0,5.43.66,6.82,1.99,1.39,1.33,2.08,3.24,2.08,5.74v3.75c0,1.69-.34,3.04-1.03,4.08-.69,1.03-1.69,1.8-3,2.29,1.28.41,2.21,1.1,2.79,2.08.58.98.87,2.37.87,4.15v7.35c0,.47.08.85.23,1.15.16.3.37.57.66.82h-4.87c-.19-.19-.33-.47-.42-.84-.09-.38-.14-.78-.14-1.22v-7.12c0-1.47-.28-2.55-.84-3.26-.56-.7-1.67-1.05-3.33-1.05h-3.94Zm0-16.07v12.18h4.03c1.62,0,2.79-.41,3.49-1.22.7-.81,1.05-2,1.05-3.56v-3.14c0-1.47-.36-2.54-1.08-3.23-.72-.69-1.91-1.03-3.56-1.03h-3.94Z"/></svg>
-        <div class="rule"></div>
-        <h1>Where good wine meets quantum weirdness</h1>
-        <p class="lede">Wines from a restored 18th‑century cellar in the mountains of inland Alicante, in Spain’s Levante — made by three quantum physicists.</p>
-      </div>
-      <p class="kicker muted">Lise Meitner · Max Born · El·lipse</p>
+      <h1>Where good wine meets<br><em>quantum weirdness</em></h1>
+      <p class="lede">Wines from a restored 18th‑century cellar in the mountains of inland Alicante, in Spain’s Levante — made by three quantum physicists.</p>
     </div>
-    <img class="cover-img" src="img/bottle-vines.jpg" alt="A bottle of Quàntic red and an ħ-etched glass on a terrace above the vineyards and mountains">
   </section>
 
   <!-- LAND -->
-  <section id="land" class="land">
-    <img class="wide" src="img/vineyard.jpg" alt="Rows of vines in evening light below pine- and cypress-covered hills" loading="lazy">
+  <section id="land">
     <div class="wrap">
       <p class="eyebrow"><svg class="h"><use href="#hbar"/></svg>The land</p>
       <h2>Vineyards in the mountains of Spain’s Levante</h2>
       <div class="cols">
         <p>Our vines grow in Gaianes, Agres and Cocentaina, in the mountainous interior of the Comunitat Valenciana — among holm oaks, pines and cypresses, beneath Mariola, Benicadell and Montcabrer, under the Mediterranean light.</p>
         <p>At harvest, days reach 24–29 °C while nights in Agres fall to 9–12 °C. The cool nights let the vines rest and keep the fruit fresh and aromatic. Bringing abandoned micro‑vineyards back into cultivation keeps the landscape alive.</p>
-      </div>
-      <div class="pair">
-        <img src="img/mist.jpg" alt="Young vines in morning mist beneath old holm oaks" loading="lazy">
-        <img src="img/night.jpg" alt="Full moon over a lit stone tower on a rocky hilltop at dusk" loading="lazy">
       </div>
     </div>
   </section>
@@ -83,24 +74,18 @@
       <div><strong>Red &amp; white Garnacha · Syrah<br>Tempranillo · Tintorera · Chardonnay</strong><span>Our varieties</span></div>
       <div><strong>Gaianes · Agres<br>Cocentaina</strong><span>Our vineyards</span></div>
     </div>
-    <div class="mosaic">
-      <img class="m1" src="img/tasting-room.jpg" alt="A long table dressed in crimson with Quàntic bottles under the old wooden beams" loading="lazy">
-      <img class="m2" src="img/black-grapes.jpg" alt="Ripe black grapes hanging from an old vine" loading="lazy">
-      <img class="m3" src="img/white-grapes.jpg" alt="A backlit bunch of white grapes on an old vine" loading="lazy">
-      <img class="m4" src="img/barrels.jpg" alt="The old basket press and oak barrels in the cellar" loading="lazy">
-    </div>
   </section>
 
   <!-- WINES -->
   <section id="wines" class="wines">
-    <div class="fade"><img src="img/grapes-beams.jpg" alt="Bunches of white grapes drying from the beams of the old cellar" loading="lazy"></div>
+    <div class="fade"><img src="img/grapes-1400.webp" srcset="img/grapes-800.webp 800w, img/grapes-1400.webp 1400w" sizes="100vw" width="1400" height="1050" loading="lazy" decoding="async" alt="Bunches of white grapes drying from the beams of the old cellar"></div>
     <div class="wrap">
       <p class="eyebrow center"><svg class="h"><use href="#hbar"/></svg>The wines</p>
       <h2 class="center">Three wines, one constant</h2>
       <p class="center sub">Rated by the tasting panel of <a href="https://www.verema.com/" target="_blank" rel="noopener">Verema</a>, November 2026 — all three above 90 points.</p>
       <div class="grid3">
         <article class="wine">
-          <img src="img/bottle-lise.jpg" alt="Quàntic Lise Meitner bottle with blue ħ label" loading="lazy">
+          <img src="img/bottle-lise.webp" width="252" height="900" loading="lazy" decoding="async" alt="Quàntic Lise Meitner bottle with blue ħ label">
           <p class="kind">Quàntic · White</p>
           <h3 class="blue">Lise Meitner</h3>
           <p class="score"><a href="https://www.verema.com/vinos/163290-lise-meitner-2025" target="_blank" rel="noopener"><strong>95</strong><span>/100 Verema</span></a></p>
@@ -108,7 +93,7 @@
           <p>White fruit and peach on the nose, fine minerality, and a lovely tension and freshness on the palate.</p>
         </article>
         <article class="wine">
-          <img src="img/bottle-born.jpg" alt="Quàntic Max Born bottle with crimson ħ label" loading="lazy">
+          <img src="img/bottle-born.webp" width="252" height="900" loading="lazy" decoding="async" alt="Quàntic Max Born bottle with crimson ħ label">
           <p class="kind">Quàntic · Red</p>
           <h3 class="wine-red">Max Born</h3>
           <p class="score"><a href="https://www.verema.com/vinos/163268-max-born-2022-2023" target="_blank" rel="noopener"><strong>94</strong><span>/100 Verema</span></a></p>
@@ -116,7 +101,7 @@
           <p>Peppery and spicy, very round and accessible. Give it air — it opens beautifully in a decanter.</p>
         </article>
         <article class="wine">
-          <img src="img/bottle-ellipse.jpg" alt="El·lipse bottle with calligraphic ħ label" loading="lazy">
+          <img src="img/bottle-ellipse.webp" width="252" height="900" loading="lazy" decoding="async" alt="El·lipse bottle with calligraphic ħ label">
           <p class="kind">Our special red</p>
           <h3>El·lipse</h3>
           <p class="score"><a href="https://www.verema.com/vinos/163278-lipse-2024-2025" target="_blank" rel="noopener"><strong>93</strong><span>/100 Verema</span></a></p>
@@ -140,12 +125,12 @@
         </div>
       </div>
       <div class="grid3 labels">
-        <figure><img src="img/label-classic.jpg" alt="Classic ħ labels on the white and the red" loading="lazy"><figcaption><b>Classic</b>A clean, modern <svg class="h"><use href="#hbar"/></svg> on Lise Meitner and Max Born.</figcaption></figure>
-        <figure><img src="img/label-calligraphic.jpg" alt="The calligraphic ħ label of El·lipse beside the classic labels" loading="lazy"><figcaption><b>Calligraphic</b>Brushed in Japanese calligraphy by Ayako’s mother, for El·lipse.</figcaption></figure>
-        <figure><img src="img/label-bespoke.jpg" alt="Bespoke label covered in hand-drawn equations" loading="lazy"><figcaption><b>Bespoke</b>Scribbled with equations, customised for a centre promoting art and science.</figcaption></figure>
+        <figure><img src="img/label-classic-400.webp" srcset="img/label-classic-400.webp 400w, img/label-classic-780.webp 780w" sizes="(max-width:560px) 92vw, 30vw" width="400" height="615" loading="lazy" decoding="async" alt="Classic ħ labels on the white and the red"><figcaption><b>Classic</b>A clean, modern <svg class="h"><use href="#hbar"/></svg> on Lise Meitner and Max Born.</figcaption></figure>
+        <figure><img src="img/label-calligraphic-400.webp" srcset="img/label-calligraphic-400.webp 400w, img/label-calligraphic-780.webp 780w" sizes="(max-width:560px) 92vw, 30vw" width="400" height="615" loading="lazy" decoding="async" alt="The calligraphic ħ label of El·lipse beside the classic labels"><figcaption><b>Calligraphic</b>Brushed in Japanese calligraphy by Ayako’s mother, for El·lipse.</figcaption></figure>
+        <figure><img src="img/label-bespoke-400.webp" srcset="img/label-bespoke-400.webp 400w, img/label-bespoke-780.webp 780w" sizes="(max-width:560px) 92vw, 30vw" width="400" height="615" loading="lazy" decoding="async" alt="Bespoke label covered in hand-drawn equations"><figcaption><b>Bespoke</b>Scribbled with equations, customised for a centre promoting art and science.</figcaption></figure>
       </div>
       <div class="capsule">
-        <img src="img/capsule.jpg" alt="Two bottle tops with walking-cat capsules, seen from above" loading="lazy">
+        <img src="img/capsule-700.webp" srcset="img/capsule-700.webp 700w, img/capsule-1400.webp 1400w" sizes="(max-width:960px) 92vw, 45vw" width="700" height="409" loading="lazy" decoding="async" alt="Two bottle tops with walking-cat capsules, seen from above">
         <div>
           <p class="eyebrow pink"><svg class="h"><use href="#hbar"/></svg>The capsule</p>
           <h3>Schrödinger’s cat — our seal of approval</h3>
@@ -169,7 +154,7 @@
 
   <!-- VISIT -->
   <section id="visit" class="visit">
-    <div class="visit-img"><img src="img/facade.jpg" alt="The façade of Celler Quàntic in Gaianes" loading="lazy"></div>
+    <div class="visit-img"><img src="img/facade-800.webp" srcset="img/facade-800.webp 800w, img/facade-1400.webp 1400w" sizes="(max-width:960px) 100vw, 50vw" width="800" height="600" loading="lazy" decoding="async" alt="The façade of Celler Quàntic in Gaianes"></div>
     <div class="visit-text">
       <p class="eyebrow"><svg class="h"><use href="#hbar"/></svg>Visit us</p>
       <h2>Come to Gaianes</h2>
