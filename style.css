@@ -116,10 +116,10 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .dark h2,.dark h3{color:var(--cream)}
 .dark p,.dark figcaption{color:var(--dark-text)}
 .label-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,88px);align-items:center}
-.label-fig{position:relative;margin:0 0 48px}
-.label-fig img{display:block}
-.label-fig > img:first-child{aspect-ratio:400/615;object-fit:cover;width:82%}
-.label-fig .inset{position:absolute;right:0;bottom:-48px;width:52%;aspect-ratio:378/224;object-fit:cover;border:6px solid var(--dark)}
+.label-fig{display:grid;gap:10px;margin:0;max-width:460px}
+.label-fig img{display:block;width:100%;object-fit:cover}
+.label-fig .top-view{aspect-ratio:378/224}
+.label-fig img:last-child{aspect-ratio:4/5;object-position:50% 62%}
 .label-text .bigh{display:block;width:clamp(70px,8vw,104px);height:clamp(82px,9.4vw,122px);color:var(--pink);margin-bottom:28px}
 .label-text h3{font-size:clamp(1.5rem,2.2vw,2rem);margin-top:1.4em;color:var(--cream)}
 .label-text p{max-width:34em}
@@ -170,7 +170,7 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .hero-text{position:relative;padding:28px var(--pad) 36px}
   .nav nav a:not(.m){display:none}
   .cols,.visit,.label-grid{grid-template-columns:1fr;gap:24px}
-  .label-fig{max-width:460px;margin-bottom:72px}
+  .label-fig{margin-bottom:12px}
   .label-text .bigh{display:none}
   .facts{grid-template-columns:1fr;gap:20px}
   .grid3{grid-template-columns:1fr;max-width:460px;margin-left:auto;margin-right:auto}
