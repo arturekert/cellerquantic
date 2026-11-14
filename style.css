@@ -132,9 +132,9 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .grid4 blockquote{margin:0;font:italic 1.2rem/1.4 var(--display);color:var(--ink)}
 
 /* visit */
-.visit{display:grid;grid-template-columns:1fr 1fr;padding:0;background:var(--white)}
-.visit-img{position:relative;min-height:420px}
-.visit-img img{position:absolute;inset:0;height:100%;object-fit:cover;object-position:center 75%}
+.visit{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:0;background:var(--white)}
+.visit-img{padding:clamp(40px,6vw,80px) 0 clamp(40px,6vw,80px) var(--pad)}
+.visit-img img{width:100%;height:auto;aspect-ratio:1600/1201}
 .visit-text{padding:clamp(56px,7vw,96px) var(--pad)}
 .visit-lede{font:italic 400 1.35rem/1.45 var(--display);color:var(--ink);max-width:28em}
 .tours{list-style:none;margin:28px 0;padding:0}
@@ -178,7 +178,7 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .labels{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;gap:12px}
   .labels figcaption{font-size:.82rem}
   .grid4{grid-template-columns:1fr 1fr}
-  .visit-img{min-height:320px}
+  .visit-img{padding:0}
   .band-right{align-items:flex-start}
 }
 @media (max-width:560px){
