@@ -56,6 +56,18 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 .constant .sym,.constant .unit{flex:none}
 .constant sup{font-size:.6em}
 
+/* phone menu */
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;font:500 .74rem var(--caps);letter-spacing:.2em;text-transform:uppercase;color:var(--ink);padding:6px 0 6px 12px}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav summary::after{content:"";display:inline-block;width:.5em;height:.5em;margin-left:.6em;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-.2em) rotate(45deg)}
+.mnav[open] summary::after{transform:translateY(.1em) rotate(-135deg)}
+.mnav-panel{position:absolute;right:calc(-1 * var(--pad));top:calc(100% + 15px);min-width:220px;background:var(--paper);border:1px solid var(--line);border-right:0;box-shadow:0 12px 24px rgba(26,24,22,.12);padding:6px 0}
+.mnav-panel a{display:block;padding:12px 22px;font:500 .78rem var(--caps);letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.mnav-panel a+a{border-top:1px solid var(--line)}
+.mnav-panel a.shop{color:var(--accent)}
+.band-links{max-width:calc(var(--max) - 2*72px);margin:36px auto 0;font:500 .72rem/2.2 var(--caps);letter-spacing:.16em;text-transform:uppercase}
+
 /* hero */
 .hero{position:relative;height:min(84vh,780px);min-height:480px;padding:0;overflow:hidden;background:#5b6b3a center/cover no-repeat}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
@@ -186,6 +198,9 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
 
 /* responsive */
 @media (max-width:960px){
+  .nav nav{display:none}
+  .mnav{display:block}
+  .brand{white-space:nowrap}
   .sheet-sec{grid-template-columns:minmax(0,1fr);gap:8px}
   .sheet-fig.narrow{margin-left:0}
   .visit-img{padding:0}
@@ -193,7 +208,6 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .hero img{position:relative;inset:auto;height:auto;aspect-ratio:1448/1086;object-position:50% 50%}
   .hero::after{display:none}
   .hero-text{position:relative;padding:28px var(--pad) 36px}
-  .nav nav a:not(.m){display:none}
   .cols,.label-grid{grid-template-columns:1fr;gap:24px}
   .label-fig{margin-bottom:12px}
   .label-text .bigh{display:none}
@@ -210,10 +224,6 @@ svg.h{display:inline-block;width:.66em;height:.78em;vertical-align:baseline;over
   .winespec{min-width:520px}
   .plot-card{padding:16px}
     .brand{font-size:.85rem;letter-spacing:.14em}
-  .nav nav{gap:14px}
-  .nav nav a[href="index.html#visit"],.nav nav a[href="index.html#wines"]{display:none}
-  .nav nav a,.brand{white-space:nowrap}
-  .nav nav a{letter-spacing:.14em}
   .grid4{grid-template-columns:1fr}
     .press li{grid-template-columns:1fr auto;gap:4px 12px}
   .press time{grid-column:1/-1}

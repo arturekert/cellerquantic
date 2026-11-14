@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Jost:wght@500&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=22">
+<link rel="stylesheet" href="style.css?v=23">
 </head>
 <body>
 <!-- ħ glyph, reused below with <use href="#hbar"> -->
@@ -25,13 +25,25 @@
   <a href="index.html" class="brand"><svg class="h"><use href="#hbar"/></svg>CELLER QUÀNTIC</a>
   <nav>
     <a href="index.html#celler">Celler</a>
-    <a href="index.html#wines" class="m">Wines</a>
+    <a href="index.html#wines">Wines</a>
     <a href="news.html">News</a>
-    <a href="index.html#visit" class="m">Visit</a>
+    <a href="index.html#visit">Visit</a>
     <a href="indepth.html">In depth</a>
-    <a href="invinoveritas.html" class="m">In vino veritas</a>
-    <a href="https://cellerquantic.com/en/tienda/" class="shop m">Shop</a>
+    <a href="invinoveritas.html">In vino veritas</a>
+    <a href="https://cellerquantic.com/en/tienda/" class="shop">Shop</a>
   </nav>
+  <details class="mnav">
+    <summary aria-label="Menu">Menu</summary>
+    <div class="mnav-panel">
+      <a href="index.html#celler">Celler</a>
+      <a href="index.html#wines">Wines</a>
+      <a href="news.html">News</a>
+      <a href="index.html#visit">Visit</a>
+      <a href="indepth.html">In depth</a>
+      <a href="invinoveritas.html">In vino veritas</a>
+      <a href="https://cellerquantic.com/en/tienda/" class="shop">Shop</a>
+    </div>
+  </details>
 </div>
 <div class="constant" aria-hidden="true"><span class="sym"><svg class="h"><use href="#hbar"/></svg> =&nbsp;</span><span class="digits">1.054571817646156391262428003302280744722826330020413122421923470598435912734739062498530628612457000198918474417415512023</span><span class="unit">&nbsp;× 10<sup>−34</sup> J·s</span></div>
 </header>
@@ -72,8 +84,10 @@
       <a href="https://www.facebook.com/people/Celler-Quantic/pfbid0MSVZubcacsqLArTwx1LvHVxtGXaPnpYdWrNw7Td5re9UEj4fRPdoDJPx1XbJZ3qLl/" target="_blank" rel="noopener">Facebook · Celler Quàntic</a>
     </div>
   </div>
+  <p class="band-links"><a href="index.html#celler">Celler</a> · <a href="index.html#wines">Wines</a> · <a href="news.html">News</a> · <a href="index.html#visit">Visit</a> · <a href="indepth.html">In depth</a> · <a href="invinoveritas.html">In vino veritas</a> · <a href="https://cellerquantic.com/en/tienda/">Shop</a></p>
   <p class="small">© 2026 Celler Quàntic de Gaianes · Please enjoy responsibly. Sale of alcohol to persons under 18 is prohibited.</p>
 </footer>
 
+<script>document.querySelectorAll(".mnav a").forEach(function(a){a.addEventListener("click",function(){a.closest("details").removeAttribute("open")})})</script>
 </body>
 </html>
